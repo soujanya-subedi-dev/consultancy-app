@@ -1,4 +1,4 @@
-import React from "react";
+// components/footer.jsx
 import { Icon } from "@iconify/react";
 
 export default function Footer() {
@@ -15,7 +15,8 @@ export default function Footer() {
               <span className="font-bold text-lg">EduSearch</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Find the best consultancy for your course abroad and kickstart your international education journey.
+              Find the best consultancy for your course abroad and kickstart
+              your international education journey.
             </p>
           </div>
 
@@ -24,22 +25,34 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/" className="text-gray-400 hover:text-blue-400 transition">
+                <a
+                  href="/"
+                  className="text-gray-400 hover:text-blue-400 transition"
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="/register" className="text-gray-400 hover:text-blue-400 transition">
+                <a
+                  href="/register"
+                  className="text-gray-400 hover:text-blue-400 transition"
+                >
                   Register
                 </a>
               </li>
               <li>
-                <a href="/login" className="text-gray-400 hover:text-blue-400 transition">
+                <a
+                  href="/login"
+                  className="text-gray-400 hover:text-blue-400 transition"
+                >
                   Login
                 </a>
               </li>
               <li>
-                <a href="/profile" className="text-gray-400 hover:text-blue-400 transition">
+                <a
+                  href="/profile"
+                  className="text-gray-400 hover:text-blue-400 transition"
+                >
                   Profile
                 </a>
               </li>
@@ -51,22 +64,34 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-4">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-blue-400 transition"
+                >
                   How It Works
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-blue-400 transition"
+                >
                   Study Abroad
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-blue-400 transition"
+                >
                   Countries
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-blue-400 transition">
+                <a
+                  href="#"
+                  className="text-gray-400 hover:text-blue-400 transition"
+                >
                   Courses
                 </a>
               </li>
@@ -79,13 +104,19 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Icon icon="mdi:email" className="text-blue-400" />
-                <a href="mailto:info@edusearch.com" className="text-gray-400 hover:text-blue-400 transition">
+                <a
+                  href="mailto:info@edusearch.com"
+                  className="text-gray-400 hover:text-blue-400 transition"
+                >
                   info@edusearch.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Icon icon="mdi:phone" className="text-blue-400" />
-                <a href="tel:+1234567890" className="text-gray-400 hover:text-blue-400 transition">
+                <a
+                  href="tel:+1234567890"
+                  className="text-gray-400 hover:text-blue-400 transition"
+                >
                   +1 (234) 567-890
                 </a>
               </li>

@@ -1,3 +1,4 @@
+// api/axios.js
 import axios from "axios";
 
 const API = axios.create({
@@ -6,7 +7,7 @@ const API = axios.create({
 });
 
 // Attach token automatically
-API.interceptors.request.use(config => {
+API.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token) config.headers.Authorization = `Token ${token}`;
   return config;
@@ -14,8 +15,8 @@ API.interceptors.request.use(config => {
 
 // Response error handling
 API.interceptors.response.use(
-  response => response,
-  error => {
+  (response) => response,
+  (error) => {
     if (error.response?.status === 401) {
       // Unauthorized - token may be expired
       localStorage.removeItem("token");

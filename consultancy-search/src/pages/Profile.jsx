@@ -1,3 +1,4 @@
+// pages/Profile.jsx
 import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";

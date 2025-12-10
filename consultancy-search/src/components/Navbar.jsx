@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+// components/navbar.jsx
 import { Icon } from "@iconify/react";
+import { useEffect, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +43,12 @@ export default function Navbar() {
       // Admin users
       return [
         { path: "/", label: "Home", icon: "mdi:home" },
-        { path: "/admin", label: "Dashboard", icon: "mdi:shield-admin" },
+        { path: "/admin", label: "Verify", icon: "mdi:shield-check" },
+        {
+          path: "/admin/dashboard",
+          label: "Dashboard",
+          icon: "mdi:shield-admin",
+        },
       ];
     }
 
@@ -54,9 +60,7 @@ export default function Navbar() {
       ];
     }
 
-    return [
-      { path: "/", label: "Home", icon: "mdi:home" },
-    ];
+    return [{ path: "/", label: "Home", icon: "mdi:home" }];
   };
 
   const navLinks = getNavLinks();
@@ -66,7 +70,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 font-bold text-xl hover:opacity-90 transition">
+          <Link
+            to="/"
+            className="flex items-center gap-2 font-bold text-xl hover:opacity-90 transition"
+          >
             <Icon icon="mdi:school" className="text-2xl" />
             <span>EduSearch</span>
           </Link>
